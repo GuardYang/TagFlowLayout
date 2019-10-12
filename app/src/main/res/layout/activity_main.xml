@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.changmi.tagflowlayout.MainActivity">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="批量刷新" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="添加一个 AAAAAAAA" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="移除第五个" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view">
+
+        <com.changmi.tagflowlayout.flowlayout.TagFlowLayout
+            android:id="@+id/my_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:horizontalSpace="10dp"
+            app:isShowAddViewAnimation="true"
+            app:verticalSpace="10dp">
+
+        </com.changmi.tagflowlayout.flowlayout.TagFlowLayout>
+    </ScrollView>
+</LinearLayout>
