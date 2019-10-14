@@ -25,8 +25,8 @@ public class FlowLayout extends ViewGroup {
     public FlowLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         TypedArray ta = context.obtainStyledAttributes(attributeSet, R.styleable.FlowLayout);
-        verticalSpace = (int) ta.getDimension(R.styleable.FlowLayout_verticalSpace,20f);
-        horizontalSpace= (int) ta.getDimension(R.styleable.FlowLayout_horizontalSpace,20f);
+        verticalSpace = (int) ta.getDimension(R.styleable.FlowLayout_verticalSpace,0.2f);
+        horizontalSpace= (int) ta.getDimension(R.styleable.FlowLayout_horizontalSpace,0.2f);
         isShowAddViewAnimation= ta.getBoolean(R.styleable.FlowLayout_isShowAddViewAnimation,true  );
         ta.recycle();
         initAddViewAnimation();

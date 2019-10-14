@@ -49,7 +49,7 @@ public abstract class TagAdapter<T> {
         }
     }
 
-    public void removeTag(int pos){
+    public void removeTag(int pos)  {
             tags.remove(pos);
     }
 

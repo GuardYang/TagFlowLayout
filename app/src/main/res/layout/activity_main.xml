@@ -37,9 +37,9 @@
             android:id="@+id/my_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:horizontalSpace="10dp"
+            app:horizontalSpace="0dip"
             app:isShowAddViewAnimation="true"
-            app:verticalSpace="10dp">
+            app:verticalSpace="0dip">
 
         </com.changmi.tagflowlayout.flowlayout.TagFlowLayout>
     </ScrollView>
